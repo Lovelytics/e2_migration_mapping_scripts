@@ -88,6 +88,7 @@ def main(ST, E2, STTOKEN, E2TOKEN):
                 st_job_ids.append(j['job_id'])
                 e2_job_ids.append(i['job_id'])
                 job_names.append(i['settings']['name'])
+                break
 
     pd.DataFrame.from_dict({"ST Job ID": st_job_ids,
                             "Job Name": job_names,
